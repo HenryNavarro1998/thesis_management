@@ -9,8 +9,7 @@
     'license': 'LGPL-3',
     'depends': ['base'],
     'data': [
-        # 'security/ir.model.access.csv',
-        'views/views.xml',
-        'views/templates.xml',
+        'security/ir.model.access.csv',
+        'views/acta_views.xml',
     ],
 }
