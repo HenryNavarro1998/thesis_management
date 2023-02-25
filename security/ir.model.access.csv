@@ -1,2 +1,4 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-thesis_management.access_acta,access_acta,thesis_management.model_acta,base.group_user,1,1,1,1
+thesis_management.access_evaluation_certificate,access_evaluation_certificate,thesis_management.model_evaluation_certificate,base.group_user,1,1,1,1
+thesis_management.access_student,access_student,thesis_management.model_student,base.group_user,1,1,1,1
+thesis_management.access_professor,access_professor,thesis_management.model_professor,base.group_user,1,1,1,1

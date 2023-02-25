@@ -10,6 +10,9 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
-        'views/acta_views.xml',
+        'views/menu_views.xml',
+        'views/evaluation_certificate_views.xml',
+        'views/student_views.xml',
+        'views/professor_views.xml',
     ],
 }
