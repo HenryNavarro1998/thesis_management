@@ -37,7 +37,8 @@
               
               </page>
               <page string="Students">
-              
+                <field name="student_line_ids">
+                </field>
               </page>
             </notebook>
           </sheet>

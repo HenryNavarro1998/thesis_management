@@ -6,12 +6,12 @@
       <field name="arch" type="xml">
         <tree>
             <field name="name"/>            
-            <field name="last_name"/>
+            <!-- <field name="last_name"/>
             <field name="cedula"/>
             <field name="role"/>
             <field name="imparts_career"/>            
             <field name="performance"/>
-            <field name="total_role"/>
+            <field name="total_role"/> -->
         </tree>
       </field>
     </record>

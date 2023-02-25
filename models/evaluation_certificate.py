@@ -28,6 +28,9 @@ class EvaluationCertificate(models.Model):
     approved_status = fields.Selection(
         APPROVED_STATUS, 'Certificate Status', default='refused')
 
+    student_line_ids = fields.One2many(
+        'student.line', 'certificate_id', 'Students')
+
     carrer_id = fields.Many2one('college.carrer', 'College Carrer')
 
     def action_approve_certificate(self):
@@ -35,3 +38,14 @@ class EvaluationCertificate(models.Model):
 
     def action_refuse_certificate(self):
         self.write({'approved_status': 'refused'})
+
+
+class StudentLine(models.Model):
+
+    _name = 'student.line'
+    _description = 'Student Line Model for management thesis students'
+
+    certificate_id = fields.Many2one(
+        'evaluation.certificate', 'Certificate')
+
+    student_id = fields.Many2one('student', 'Student')
