@@ -1,2 +1,5 @@
 id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
-access_thesis_management_thesis_management,thesis_management.thesis_management,model_thesis_management_thesis_management,base.group_user,1,1,1,1
+thesis_management.access_evaluation_certificate,access_evaluation_certificate,thesis_management.model_evaluation_certificate,base.group_user,1,1,1,1
+thesis_management.access_student,access_student,thesis_management.model_student,base.group_user,1,1,1,1
+thesis_management.access_professor,access_professor,thesis_management.model_professor,base.group_user,1,1,1,1
+thesis_management.access_student_line,access_student_line,thesis_management.model_student_line,base.group_user,1,1,1,1
