@@ -5,11 +5,11 @@
       <field name="model">professor</field>
       <field name="arch" type="xml">
         <tree>
-            <field name="name"/>            
+            <field name="name"/>
             <!-- <field name="last_name"/>
             <field name="cedula"/>
             <field name="role"/>
-            <field name="imparts_career"/>            
+            <field name="imparts_career"/>
             <field name="performance"/>
             <field name="total_role"/> -->
         </tree>
@@ -18,7 +18,7 @@
 
 
     <record id="action_professor" model="ir.actions.act_window">
-        <field name="name">Profesor</field>
+        <field name="name">Professor</field>
         <field name="res_model">professor</field>
         <field name="view_mode">tree,form</field>
         <field name="help" type="html">

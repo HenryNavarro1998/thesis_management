@@ -16,6 +16,11 @@ APPROVED_STATUS = [
     ('approved', 'Approved'),
 ]
 
+JURY_TYPE = [
+    ('president','President'),
+    ('first_judge', 'First judge'),
+    ('second_judge', 'Second judge'),
+]
 
 class EvaluationCertificate(models.Model):
 
@@ -25,12 +30,8 @@ class EvaluationCertificate(models.Model):
     name = fields.Char('Tittle of Work', required=True)
     place = fields.Selection(PLACE_OPTIONS, 'Place', required=True)
     presentation_date = fields.Datetime('Presentation Date', required=True)
-    approved_status = fields.Selection(
-        APPROVED_STATUS, 'Certificate Status', default='refused')
-
-    student_line_ids = fields.One2many(
-        'student.line', 'certificate_id', 'Students')
-
+    approved_status = fields.Selection(APPROVED_STATUS, 'Certificate Status', default='refused')
+    student_line_ids = fields.One2many('student.line', 'certificate_id', 'Students')
     carrer_id = fields.Many2one('college.carrer', 'College Carrer')
 
     def action_approve_certificate(self):
@@ -45,7 +46,15 @@ class StudentLine(models.Model):
     _name = 'student.line'
     _description = 'Student Line Model for management thesis students'
 
-    certificate_id = fields.Many2one(
-        'evaluation.certificate', 'Certificate')
-
+    certificate_id = fields.Many2one('evaluation.certificate', 'Certificate')
     student_id = fields.Many2one('student', 'Student')
+
+
+class ProfessorLine(models.Model):
+
+    _name = 'professor.line'
+    _description = 'Professor Line Model for management Professors'
+
+    certificate_id = fields.Many2one('evaluation.certificate', 'Certificate')
+    professor_id = fields.Many2one('professor', 'Professor')
+    jury_type = fields.Selection(JURY_TYPE, 'Judge', required=True)
