@@ -6,6 +6,7 @@
       <field name="arch" type="xml">
         <tree>
             <field name="name"/>            
+            <field name="times_in_jury"/>            
             <!-- <field name="last_name"/>
             <field name="cedula"/>
             <field name="role"/>

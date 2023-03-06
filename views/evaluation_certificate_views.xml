@@ -30,14 +30,25 @@
               <field name="place"/>
             </group>
             <group>
+              <field name="tutor_id"/>
               <field name="presentation_date"/>
             </group>
             <notebook>
               <page string="Jurados">
-              
+                <field name="professor_line_ids">
+                  <tree editable="bottom">
+                    <field name="professor_id"/>
+                    <field name="jury_type"/>
+                  </tree>
+                </field>
               </page>
               <page string="Students">
                 <field name="student_line_ids">
+                  <tree editable="bottom">
+                    <field name="student_id"/>
+                    <field name="student_document"/>
+                    <field name="student_carrer"/>
+                  </tree>
                 </field>
               </page>
             </notebook>

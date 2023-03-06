@@ -1,0 +1,24 @@
+<odoo>
+
+    <record id="carrer_view_tree" model="ir.ui.view">
+      <field name="name">carrer.tree.view</field>
+      <field name="model">carrer</field>
+      <field name="arch" type="xml">
+        <tree>
+            <field name="name"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- <record id="action_carrer" model="ir.actions.act_window">
+        <field name="name">Carrer</field>
+        <field name="res_model">carrer</field>
+        <field name="view_mode">tree,form</field>
+        <field name="help" type="html">
+          <p class="o_view_nocontent_smiling_face">
+            Define a new Carrer
+          </p>
+        </field>
+    </record> -->
+
+</odoo>
