@@ -10,7 +10,7 @@
       </field>
     </record>
 
-    <!-- <record id="action_carrer" model="ir.actions.act_window">
+    <record id="action_carrer" model="ir.actions.act_window">
         <field name="name">Carrer</field>
         <field name="res_model">carrer</field>
         <field name="view_mode">tree,form</field>
@@ -19,6 +19,6 @@
             Define a new Carrer
           </p>
         </field>
-    </record> -->
+    </record>
 
 </odoo>

@@ -12,10 +12,10 @@
         'security/ir.model.access.csv',
         'reports/evaluation_certificate_reports.xml',
         'reports/evaluation_certificate_report_view.xml',
-        'views/menu_views.xml',
         'views/evaluation_certificate_views.xml',
         'views/student_views.xml',
         'views/professor_views.xml',
         'views/carrer_views.xml',
+        'views/menu_views.xml',
     ],
 }
