@@ -26,10 +26,11 @@ JURY_TYPE = [
 ]
 
 JURY_TYPE = [
-    ('president','President'),
+    ('president', 'President'),
     ('first_judge', 'First judge'),
     ('second_judge', 'Second judge'),
 ]
+
 
 class EvaluationCertificate(models.Model):
 
@@ -39,14 +40,20 @@ class EvaluationCertificate(models.Model):
     name = fields.Char('Tittle of Work', required=True)
     place = fields.Selection(PLACE_OPTIONS, 'Place', required=True)
     presentation_date = fields.Datetime('Presentation Date', required=True)
-    approved_status = fields.Selection(APPROVED_STATUS, 'Certificate Status', default='refused')
-    professor_line_ids = fields.One2many('professor.line', 'certificate_id', 'Professors')
-    student_line_ids = fields.One2many('student.line', 'certificate_id', 'Students')
+    approved_status = fields.Selection(
+        APPROVED_STATUS, 'Certificate Status', default='refused')
+    professor_line_ids = fields.One2many(
+        'professor.line', 'certificate_id', 'Professors')
+    student_line_ids = fields.One2many(
+        'student.line', 'certificate_id', 'Students')
     tutor_id = fields.Many2one('professor', 'Tutor')
+    tutor_cace = fields.Char(related='tutor_id.cace')
     document_file = fields.Binary('Documento adjunto')
 
-    carrer_ids = fields.Many2many('carrer', string='Carrer', compute="compute_carrer", store=True)
-    student_ids = fields.Many2many('student', string='Student', compute="compute_student", store=True)
+    carrer_ids = fields.Many2many(
+        'carrer', string='Carrer', compute="compute_carrer", store=True)
+    student_ids = fields.Many2many(
+        'student', string='Student', compute="compute_student", store=True)
 
     def action_approve_certificate(self):
         self.write({'approved_status': 'approved'})
@@ -54,11 +61,11 @@ class EvaluationCertificate(models.Model):
     def action_refuse_certificate(self):
         self.write({'approved_status': 'refused'})
 
-
     @api.depends('student_line_ids')
     def compute_carrer(self):
         for certificate in self:
-            carrers = certificate.student_line_ids.mapped('student_id.carrer_id')
+            carrers = certificate.student_line_ids.mapped(
+                'student_id.carrer_id')
             certificate.carrer_ids = carrers
 
     @api.depends('student_line_ids')
@@ -68,7 +75,6 @@ class EvaluationCertificate(models.Model):
             certificate.student_ids = students
 
 
-
 class ProfessorLine(models.Model):
 
     _name = 'professor.line'
@@ -76,6 +82,8 @@ class ProfessorLine(models.Model):
 
     certificate_id = fields.Many2one('evaluation.certificate', 'Certificate')
     professor_id = fields.Many2one('professor', 'Professor', required=True)
+    professor_document = fields.Char(related='professor_id.document')
+    professor_cace = fields.Char(related='professor_id.cace')
     jury_type = fields.Selection(JURY_TYPE, 'Jury Type', required=True)
 
 

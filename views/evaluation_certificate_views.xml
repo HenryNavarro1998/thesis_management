@@ -52,7 +52,11 @@
             <field name="place"/>
           </group>
           <group>
-            <field name="tutor_id"/>
+            <label for="tutor_id" string="Tutor"/>
+            <div>
+              <field name="tutor_id"/>
+              <field class="ml-3" name="tutor_cace"/>
+            </div>
             <field name="presentation_date"/>
             <field name="document_file"/>
           </group>

@@ -1,0 +1,4 @@
+{
+  "python.analysis.extraPaths": ["${workspaceFolder}/../../../odoo"],
+  "autoHide.autoHidePanel": false, 
+}

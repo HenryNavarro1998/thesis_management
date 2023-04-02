@@ -10,8 +10,10 @@
     'depends': ['base'],
     'data': [
         'security/ir.model.access.csv',
+        'security/thesis_management_security.xml',
         'reports/evaluation_certificate_reports.xml',
         'reports/evaluation_certificate_report_view.xml',
+        'views/jury_views.xml',
         'views/evaluation_certificate_views.xml',
         'views/student_views.xml',
         'views/professor_views.xml',

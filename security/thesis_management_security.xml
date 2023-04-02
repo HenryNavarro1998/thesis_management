@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data noupdate="1">
+		<record id="module_category_thesis_management" model="ir.module.category">
+			<field name="name">Thesis Management</field>
+			<field name="description">Manage users of Thesis</field>
+			<field name="sequence">10</field>
+		</record>
+
+		<record id="group_professor_user" model="res.groups">
+			<field name="name">Professor</field>
+			<field name="comment">Professor user can see records</field>
+			<field name="category_id" ref="thesis_management.module_category_thesis_management"/>
+		</record>
+
+		<record id="group_secretary_user" model="res.groups">
+			<field name="name">Secretary</field>
+			<field name="comment">Secreatry user can edit records</field>
+			<field name="category_id" ref="thesis_management.module_category_thesis_management"/>
+		</record>
+
+		<record id="group_coordinator_user" model="res.groups">
+			<field name="name">Coordinator</field>
+			<field name="comment">Coordinator user can delete records</field>
+			<field name="category_id" ref="thesis_management.module_category_thesis_management"/>
+		</record>
+	</data>
+</odoo>

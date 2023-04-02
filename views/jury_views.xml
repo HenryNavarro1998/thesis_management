@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+	<record id="professor_line_view_tree" model="ir.ui.view">
+		<field name="name">professor.line.view.tree</field>
+		<field name="model">professor.line</field>
+		<field name="arch" type="xml">
+			<tree string="Jury" editable="bottom">
+				<field name="certificate_id"/>
+				<field name="professor_id"/>
+				<field name="professor_document"/>
+				<field name="professor_cace"/>
+				<field name="jury_type"/>
+			</tree>
+		</field>
+	</record>
+
+	<record id="professor_line_view_search" model="ir.ui.view">
+		<field name="name">professor.line.view.search</field>
+		<field name="model">professor.line</field>
+		<field name="arch" type="xml">
+			<search string="Jury Search">
+				<field name="certificate_id"/>
+				<field name="professor_id"/>
+				<field name="professor_document"/>
+				<field name="professor_cace"/>
+				<field name="jury_type"/>
+				<filter name="jury_type" string="President" domain="[('jury_type','=','president')]"/>
+				<filter name="jury_type" string="First Jury" domain="[('jury_type','=','first_judge')]"/>
+				<filter name="jury_type" string="Second Jury" domain="[('jury_type','=','second_judge')]"/>
+				<group name="group_by_group" string="Group By">
+					<filter name="certificate_id" string="Certificate" context="{'group_by': 'certificate_id'}" />
+					<filter name="professor_id" string="Professor" context="{'group_by': 'professor_id'}"/>
+					<filter name="jury_type" string="Role" context="{'group_by': 'jury_type'}" />
+				</group>
+			</search>
+		</field>
+	</record>
+
+	<record id="action_jury_tree_view" model="ir.actions.act_window">
+		<field name="name">Jury</field>
+		<field name="res_model">professor.line</field>
+		<field name="view_mode">tree,form</field>
+		<field name="help" type="html">
+			<p class="o_view_nocontent_smiling_face">
+				Define a professor line
+			</p>
+		</field>
+	</record>
+
+</odoo>
