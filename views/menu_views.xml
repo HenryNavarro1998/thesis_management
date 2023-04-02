@@ -3,7 +3,7 @@
         <menuitem id="evaluation_certificate_menu" name="Certificates" action="action_evaluation_certificate"/>
         <menuitem id="student_menu" name="Students" action="action_student"/>
         <menuitem id="professor_menu" name="Professors" action="action_professor"/>
-        <!-- <menuitem id="carrer_menu" name="Carrers" action="action_carrer"/> -->
+        <menuitem id="carrer_menu" name="Carrers" action="action_carrer"/>
     </menuitem>
 
 </odoo>
