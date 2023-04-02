@@ -1,4 +1,4 @@
-from odoo import models, fields, api
+from odoo import models, fields, api, _
 
 
 class Student(models.Model):
@@ -8,5 +8,5 @@ class Student(models.Model):
 
     name = fields.Char('Name', required=True)
     document = fields.Char('Identity Document', required=True)
-    carrer_id = fields.Many2one(
-        'carrer', 'College Carrer', required=True)
+    carrer_id = fields.Many2one('carrer', 'College Carrer', required=True)
+    carrer_name = fields.Char('Carrer Degree', related='carrer_id.technical_name')
