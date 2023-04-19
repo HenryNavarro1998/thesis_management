@@ -2,7 +2,7 @@
 	<menuitem id="evaluation_certificate_menu_root" name="Evaluation Certificate" web_icon="thesis_management,static/src/img/icons/apps.png">
 		<menuitem id="evaluation_certificate_main_menu" name="Certificate" sequence="10">
 			<menuitem id="evaluation_certificate_menu" name="Certificates" action="action_evaluation_certificate" sequence="10"/>
-			<menuitem id="jury_menu" name="Professor" action="action_jury_tree_view" sequence="20"/>
+			<menuitem id="jury_menu" name="Miembros del Jurado" action="action_jury_tree_view" sequence="20"/>
 		</menuitem>
 		<menuitem id="student_menu" name="Students" action="action_student" sequence="20"/>
 		<menuitem id="professor_menu" name="Professors" action="action_professor" sequence="30"/>

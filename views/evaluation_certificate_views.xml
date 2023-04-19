@@ -6,7 +6,8 @@
     <field name="model">evaluation.certificate</field>
     <field name="arch" type="xml">
       <tree>
-        <field name="name"/>
+        <field name="display_name"/>
+        <field name="tutor_id"/>
         <field name="place"/>
         <field name="presentation_date"/>
         <field name="approved_status" widget="badge" decoration-success="approved_status == 'approved'" decoration-danger="approved_status == 'refused'"/>
@@ -42,9 +43,8 @@
     <field name="arch" type="xml">
       <form>
         <header>
-          <button class="btn btn-primary" type="object" name="action_approve_certificate" string="Approve Certificate" attrs="{'invisible': [('approved_status', '=', 'approved')]}"/>
-          <button class="btn" type="object" name="action_refuse_certificate" string="Refuse Certificate" attrs="{'invisible': [('approved_status', '=', 'refused')]}"/>
-          <field name="approved_status" widget="statusbar"/>
+          <button string="Evaluar" name="evaluate_certificate" type="object" class="btn btn-primary"/>
+          <field name="approved_status" widget="statusbar" readonly="False"/>
         </header>
         <sheet>
           <group>
@@ -86,14 +86,14 @@
   </record>
 
   <record id="action_evaluation_certificate" model="ir.actions.act_window">
-      <field name="name">Evaluation Certificate</field>
-      <field name="res_model">evaluation.certificate</field>
-      <field name="view_mode">tree,form</field>
-      <field name="help" type="html">
-        <p class="o_view_nocontent_smiling_face">
+    <field name="name">Evaluation Certificate</field>
+    <field name="res_model">evaluation.certificate</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
           Define a new Certificate
-        </p>
-      </field>
+      </p>
+    </field>
   </record>
 
 </odoo>

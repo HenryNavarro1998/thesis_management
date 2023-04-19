@@ -21,14 +21,8 @@ APPROVED_STATUS = [
 
 JURY_TYPE = [
     ('president', 'President'),
-    ('first', 'First Jury'),
-    ('second', 'Second Jury'),
-]
-
-JURY_TYPE = [
-    ('president', 'President'),
-    ('first_judge', 'First judge'),
-    ('second_judge', 'Second judge'),
+    ('first', 'First Member'),
+    ('second', 'Second Member'),
 ]
 
 
@@ -38,6 +32,7 @@ class EvaluationCertificate(models.Model):
     _description = 'Evaluation Certificate Model for management thesis'
 
     name = fields.Char('Tittle of Work', required=True)
+    display_name = fields.Char('Display Name', compute='_compute_display_name')
     place = fields.Selection(PLACE_OPTIONS, 'Place', required=True)
     presentation_date = fields.Datetime('Presentation Date', required=True)
     approved_status = fields.Selection(
@@ -55,11 +50,20 @@ class EvaluationCertificate(models.Model):
     student_ids = fields.Many2many(
         'student', string='Student', compute="compute_student", store=True)
 
-    def action_approve_certificate(self):
-        self.write({'approved_status': 'approved'})
+    def evaluate_certificate(self):
+        return {
+            'name': 'Evaluar',
+            'type': 'ir.actions.act_window',
+            'res_model': 'evaluation.certificate.wizard',
+            'view_mode': 'form',
+            'target': 'new',
+        }
 
-    def action_refuse_certificate(self):
-        self.write({'approved_status': 'refused'})
+    @api.depends('name')
+    def _compute_display_name(self):
+        for certificate in self:
+            certificate.display_name = (certificate.name if len(
+                certificate.name) <= 64 else (certificate.name[:64] + '...'))
 
     @api.depends('student_line_ids')
     def compute_carrer(self):

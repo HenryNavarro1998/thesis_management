@@ -66,12 +66,12 @@ msgstr ""
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_form
 msgid "Approve Certificate"
-msgstr ""
+msgstr "Aprobar Certificado"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__evaluation_certificate__approved_status__approved
 msgid "Approved"
-msgstr ""
+msgstr "Aprobado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__tutor_cace
@@ -92,19 +92,19 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_professor__carrer_id
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_search_view
 msgid "Carrer"
-msgstr ""
+msgstr "Carrera"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_student__carrer_name
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__student_degree
 msgid "Carrer Degree"
-msgstr ""
+msgstr "Titulo de la carrera"
 
 #. module: thesis_management
 #: model:ir.ui.menu,name:thesis_management.carrer_menu
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_search
 msgid "Carrers"
-msgstr ""
+msgstr "Carreras"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_professor_line__certificate_id
@@ -112,17 +112,17 @@ msgstr ""
 #: model:ir.ui.menu,name:thesis_management.evaluation_certificate_main_menu
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "Certificate"
-msgstr ""
+msgstr "Certificado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__approved_status
 msgid "Certificate Status"
-msgstr ""
+msgstr "Estado del Certificado"
 
 #. module: thesis_management
 #: model:ir.ui.menu,name:thesis_management.evaluation_certificate_menu
 msgid "Certificates"
-msgstr ""
+msgstr "Certificados"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__evaluation_certificate__place__chilemex
@@ -138,17 +138,17 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student__carrer_id
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__student_carrer
 msgid "College Carrer"
-msgstr ""
+msgstr "Carrera Universitaria"
 
 #. module: thesis_management
 #: model:res.groups,name:thesis_management.group_coordinator_user
 msgid "Coordinator"
-msgstr ""
+msgstr "Coordinador"
 
 #. module: thesis_management
 #: model:res.groups,comment:thesis_management.group_coordinator_user
 msgid "Coordinator user can delete records"
-msgstr ""
+msgstr "El usuario coordinador puede eliminar registros"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__create_uid
@@ -158,7 +158,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student__create_uid
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__create_uid
 msgid "Created by"
-msgstr ""
+msgstr "Creado por"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__create_date
@@ -168,7 +168,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student__create_date
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__create_date
 msgid "Created on"
-msgstr ""
+msgstr "Creado en"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_template
@@ -178,19 +178,19 @@ msgstr ""
 #. module: thesis_management
 #: model_terms:ir.actions.act_window,help:thesis_management.action_carrer
 msgid "Define a new Carrer"
-msgstr ""
+msgstr "Definir una nueva carrera"
 
 #. module: thesis_management
 #: model_terms:ir.actions.act_window,help:thesis_management.action_evaluation_certificate
 #: model_terms:ir.actions.act_window,help:thesis_management.action_professor
 #: model_terms:ir.actions.act_window,help:thesis_management.action_student
 msgid "Define a new Certificate"
-msgstr ""
+msgstr "Definir un nuevo certificado"
 
 #. module: thesis_management
 #: model_terms:ir.actions.act_window,help:thesis_management.action_jury_tree_view
 msgid "Define a professor line"
-msgstr ""
+msgstr "Definir una línea de profesor"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__display_name
@@ -200,7 +200,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student__display_name
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__display_name
 msgid "Display Name"
-msgstr ""
+msgstr "Nombre para mostrar"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__document_file
@@ -217,38 +217,38 @@ msgstr ""
 #: model:ir.ui.menu,name:thesis_management.evaluation_certificate_menu_root
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_search
 msgid "Evaluation Certificate"
-msgstr ""
+msgstr "Certificado de Evaluacion"
 
 #. module: thesis_management
 #: model:ir.model,name:thesis_management.model_evaluation_certificate
 msgid "Evaluation Certificate Model for management thesis"
-msgstr ""
+msgstr "Modelo de Certificado de Evaluación para tesis de gestión"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__certificate_ids
 #: model:ir.model.fields,field_description:thesis_management.field_professor__certificate_ids
 msgid "Evaluation Certificates"
-msgstr ""
+msgstr "Certificados de evaluacion"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "First Jury"
-msgstr ""
+msgstr "Primer jurado"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__professor_line__jury_type__first_judge
 msgid "First judge"
-msgstr ""
+msgstr "Primer jurado"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "Group By"
-msgstr ""
+msgstr "Agrupar por"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__evaluation_certificate__approved_status__honorific
 msgid "Honorific"
-msgstr ""
+msgstr "Honorifico"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__id
@@ -266,7 +266,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student__document
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__student_document
 msgid "Identity Document"
-msgstr ""
+msgstr "Documento de identidad"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_form
@@ -277,17 +277,17 @@ msgstr ""
 #: model:ir.actions.act_window,name:thesis_management.action_jury_tree_view
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_tree
 msgid "Jury"
-msgstr ""
+msgstr "Jurado"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "Jury Search"
-msgstr ""
+msgstr "Buscar jurado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_professor_line__jury_type
 msgid "Jury Type"
-msgstr ""
+msgstr "Tipo de jurado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer____last_update
@@ -297,7 +297,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student____last_update
 #: model:ir.model.fields,field_description:thesis_management.field_student_line____last_update
 msgid "Last Modified on"
-msgstr ""
+msgstr "Última modificación el"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__write_uid
@@ -307,7 +307,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student__write_uid
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__write_uid
 msgid "Last Updated by"
-msgstr ""
+msgstr "Última actualización por"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__write_date
@@ -317,7 +317,7 @@ msgstr ""
 #: model:ir.model.fields,field_description:thesis_management.field_student__write_date
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__write_date
 msgid "Last Updated on"
-msgstr ""
+msgstr "Ultima actualización en"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_template
@@ -332,31 +332,31 @@ msgstr ""
 #. module: thesis_management
 #: model:ir.module.category,description:thesis_management.module_category_thesis_management
 msgid "Manage users of Thesis"
-msgstr ""
+msgstr "Administrar usuarios de tesis"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__name
 #: model:ir.model.fields,field_description:thesis_management.field_professor__name
 #: model:ir.model.fields,field_description:thesis_management.field_student__name
 msgid "Name"
-msgstr ""
+msgstr "Nombre"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__place
 msgid "Place"
-msgstr ""
+msgstr "Lugar"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__presentation_date
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_search
 msgid "Presentation Date"
-msgstr ""
+msgstr "Fecha de presentación"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__professor_line__jury_type__president
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "President"
-msgstr ""
+msgstr "Presidente"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_template
@@ -376,73 +376,73 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_view_form
 msgid "Professor"
-msgstr ""
+msgstr "Profesor"
 
 #. module: thesis_management
 #: model:ir.model,name:thesis_management.model_professor_line
 msgid "Professor Line Model for management thesis professors"
-msgstr ""
+msgstr "Modelo Líneal para profesores sobre gestion de tesis"
 
 #. module: thesis_management
 #: model:ir.model,name:thesis_management.model_professor
 msgid "Professor of the University"
-msgstr ""
+msgstr "Profesor de la Universidad"
 
 #. module: thesis_management
 #: model:res.groups,comment:thesis_management.group_professor_user
 msgid "Professor user can see records"
-msgstr ""
+msgstr "Profesor puede ver los registros"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__professor_line_ids
 #: model:ir.ui.menu,name:thesis_management.professor_menu
 msgid "Professors"
-msgstr ""
+msgstr "Profesores"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__evaluation_certificate__approved_status__publication
 msgid "Publication"
-msgstr ""
+msgstr "Publicacion"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_form
 msgid "Refuse Certificate"
-msgstr ""
+msgstr "Certificado Rechazado"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__evaluation_certificate__approved_status__refused
 msgid "Refused"
-msgstr ""
+msgstr "Rechazado"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__evaluation_certificate__approved_status__retuned
 msgid "Returned"
-msgstr ""
+msgstr "Regresado"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "Role"
-msgstr ""
+msgstr "Rol"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "Second Jury"
-msgstr ""
+msgstr "Segundo Jurado"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__professor_line__jury_type__second_judge
 msgid "Second judge"
-msgstr ""
+msgstr "Segundo Jurado"
 
 #. module: thesis_management
 #: model:res.groups,comment:thesis_management.group_secretary_user
 msgid "Secreatry user can edit records"
-msgstr ""
+msgstr "La Secretaria puede editar los archivos"
 
 #. module: thesis_management
 #: model:res.groups,name:thesis_management.group_secretary_user
 msgid "Secretary"
-msgstr ""
+msgstr "Secretaria"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_template
@@ -452,23 +452,23 @@ msgstr ""
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_professor__signature_image
 msgid "Signature"
-msgstr ""
+msgstr "Asignatura"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__student_ids
 #: model:ir.model.fields,field_description:thesis_management.field_student_line__student_id
 msgid "Student"
-msgstr ""
+msgstr "Estudiante"
 
 #. module: thesis_management
 #: model:ir.model,name:thesis_management.model_student_line
 msgid "Student Line Model for management thesis students"
-msgstr ""
+msgstr "Modelo del estudiante para el manejo de las tesis estudiantiles"
 
 #. module: thesis_management
 #: model:ir.model,name:thesis_management.model_student
 msgid "Student of the University"
-msgstr ""
+msgstr "Estudiante de la Universidad"
 
 #. module: thesis_management
 #: model:ir.actions.act_window,name:thesis_management.action_student
@@ -477,27 +477,27 @@ msgstr ""
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_form
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_search
 msgid "Students"
-msgstr ""
+msgstr "Estudiantes"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_carrer__technical_name
 msgid "Technical Name"
-msgstr ""
+msgstr "Nombre Tecnico"
 
 #. module: thesis_management
 #: model:ir.module.category,name:thesis_management.module_category_thesis_management
 msgid "Thesis Management"
-msgstr ""
+msgstr "Gestion de Tesis"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_professor__times_in_jury
 msgid "Times in Jury"
-msgstr ""
+msgstr "Veces en el Jurado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__name
 msgid "Tittle of Work"
-msgstr ""
+msgstr "Titulo de Trabajo"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__tutor_id
