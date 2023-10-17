@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
   <record id="student_view_tree" model="ir.ui.view">
@@ -11,8 +12,6 @@
       </tree>
     </field>
   </record>
-
-
 
   <record id="action_student" model="ir.actions.act_window">
     <field name="name">Students</field>

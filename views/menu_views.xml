@@ -1,11 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
 <odoo>
-	<menuitem id="evaluation_certificate_menu_root" name="Evaluation Certificate" web_icon="thesis_management,static/src/img/icons/apps.png">
+  <menuitem id="evaluation_certificate_menu_root" name="Evaluation Certificate"
+  web_icon="thesis_management,static/src/img/icons/apps.png">
 		<menuitem id="evaluation_certificate_main_menu" name="Certificate" sequence="10">
-			<menuitem id="evaluation_certificate_menu" name="Certificates" action="action_evaluation_certificate" sequence="10"/>
+			<menuitem id="evaluation_certificate_menu" name="Certificates"
+  action="action_evaluation_certificate" sequence="10"/>
 			<menuitem id="jury_menu" name="Miembros del Jurado" action="action_jury_tree_view" sequence="20"/>
 		</menuitem>
 		<menuitem id="student_menu" name="Students" action="action_student" sequence="20"/>
 		<menuitem id="professor_menu" name="Professors" action="action_professor" sequence="30"/>
 		<menuitem id="carrer_menu" name="Carrers" action="action_carrer" sequence="40"/>
 	</menuitem>
+
+  <!-- <record id="action_test" model="ir.actions.act_window">
+    <field name="name">Test</field>
+    <field name="res_model">account.move</field>
+    <field name="view_mode">tree,fom</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+        XD
+      </p>
+    </field>
+  </record>
+
+  <record id="action_evaluation_certificate" model="ir.actions.act_window">
+    <field name="name">Evaluation Certificate</field>
+    <field name="res_model">evaluation.certificate</field>
+    <field name="view_mode">tree,form</field>
+    <field name="help" type="html">
+      <p class="o_view_nocontent_smiling_face">
+          Define a new Certificate
+      </p>
+    </field>
+  </record>
+
+  <menuitem
+    id="test_menu"
+    name="Test"
+    action="action_evaluation_certificate"
+    sequence="10"/> -->
+
 </odoo>

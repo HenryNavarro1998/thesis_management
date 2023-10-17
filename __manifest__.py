@@ -6,8 +6,9 @@
     'author': "Alejandra Turen, Fatima Ospina, Henry Guzman and Henry Navarro",
     'category': 'Uncategorized',
     'version': '1.0.0',
+    'application': True,
     'license': 'LGPL-3',
-    'depends': ['base'],
+    'depends': ['base','account'],
     'data': [
         'security/thesis_management_security.xml',
         'security/ir.model.access.csv',

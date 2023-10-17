@@ -1,5 +1,0 @@
-{
-  "python.analysis.extraPaths": ["${workspaceFolder}/../../../odoo"],
-  "autoHide.autoHidePanel": false,
-  "editor.rulers": [80,120],
-}
