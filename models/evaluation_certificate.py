@@ -6,9 +6,9 @@ from odoo.exceptions import UserError
 PLACE_OPTIONS = [
     ('chilemex', 'Chilemex'),
     ('asia', 'Villa Asia'),
-    ('atlantico', 'Ciudad Universitaria'),
-    ('online', 'Video Conferencia'),
-    ('admin', 'Edificio Adiministrativo')
+    ('atlantico', 'University City'),
+    ('online', 'Video Conference'),
+    ('admin', 'Administrative building')
 ]
 
 APPROVED_STATUS = [
@@ -52,7 +52,7 @@ class EvaluationCertificate(models.Model):
 
     def evaluate_certificate(self):
         return {
-            'name': 'Evaluar',
+            'name': 'Qualify',
             'type': 'ir.actions.act_window',
             'res_model': 'evaluation.certificate.wizard',
             'view_mode': 'form',

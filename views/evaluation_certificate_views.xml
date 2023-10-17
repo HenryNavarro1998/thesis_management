@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
 
-  <!-- <record id="evaluation_certificate_view_tree" model="ir.ui.view">
+  <record id="evaluation_certificate_view_tree" model="ir.ui.view">
     <field name="name">evaluation.certificate.tree.view</field>
     <field name="model">evaluation.certificate</field>
     <field name="arch" type="xml">
@@ -43,32 +43,26 @@
     <field name="arch" type="xml">
       <form>
         <header>
-          <button string="Evaluar" name="evaluate_certificate" type="object" class="btn btn-primary"/>
+          <button string="Qualify" name="evaluate_certificate" type="object" class="btn btn-primary"/>
           <field name="approved_status" widget="statusbar" readonly="False"/>
         </header>
         <sheet>
           <group>
-            <field name="name"/>
-            <field name="place"/>
-          </group>
-          <group>
-            <label for="tutor_id" string="Tutor"/>
-            <div>
-              <field name="tutor_id"/>
-              <field class="ml-3" name="tutor_cace"/>
-            </div>
-            <field name="presentation_date"/>
-            <field name="document_file"/>
+            <group>
+              <field name="name"/>
+              <field name="place"/>
+              <label for="tutor_id"/>
+              <div class="row">
+                <field class="col-auto" name="tutor_id"/>
+                <field class="col-auto" name="tutor_cace"/>
+              </div>
+            </group>
+            <group>
+              <field name="document_file"/>
+              <field name="presentation_date"/>
+            </group>
           </group>
           <notebook>
-            <page string="Jurados">
-              <field name="professor_line_ids">
-                <tree editable="bottom">
-                  <field name="professor_id"/>
-                  <field name="jury_type"/>
-                </tree>
-              </field>
-            </page>
             <page string="Students">
               <field name="student_line_ids">
                 <tree editable="bottom">
@@ -79,11 +73,19 @@
                 </tree>
               </field>
             </page>
+            <page string="Jurados">
+              <field name="professor_line_ids">
+                <tree editable="bottom">
+                  <field name="professor_id"/>
+                  <field name="jury_type"/>
+                </tree>
+              </field>
+            </page>
           </notebook>
         </sheet>
       </form>
     </field>
-  </record> -->
+  </record>
 
   <record id="action_evaluation_certificate" model="ir.actions.act_window">
     <field name="name">Evaluation Certificate</field>

@@ -8,7 +8,7 @@
     'version': '1.0.0',
     'application': True,
     'license': 'LGPL-3',
-    'depends': ['base','account'],
+    'depends': ['base'],
     'data': [
         'security/thesis_management_security.xml',
         'security/ir.model.access.csv',
