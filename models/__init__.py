@@ -3,4 +3,4 @@
 from . import evaluation_certificate
 from . import student
 from . import professor
-from . import carrer
+from . import career
