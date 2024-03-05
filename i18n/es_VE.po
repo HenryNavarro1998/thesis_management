@@ -4,10 +4,10 @@
 #
 msgid ""
 msgstr ""
-"Project-Id-Version: Odoo Server 15.0+e\n"
+"Project-Id-Version: Odoo Server 16.0+e\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2023-10-18 07:50+0000\n"
-"PO-Revision-Date: 2023-10-18 07:50+0000\n"
+"POT-Creation-Date: 2024-03-05 01:10+0000\n"
+"PO-Revision-Date: 2024-03-05 01:10+0000\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -17,14 +17,14 @@ msgstr ""
 
 #. module: thesis_management
 #: model:ir.actions.report,print_report_name:thesis_management.action_evaluation_certificate_report
-msgid "'Acta de Tesis'"
+msgid "'Acta de Trabajo de Grado'"
 msgstr ""
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_template
 msgid ""
 ",\n"
-"\t\t\t\t\t\ttitulares de las cédulas"
+"\t\t\t\t\t\titulares de las cédulas"
 msgstr ""
 
 #. module: thesis_management
@@ -90,7 +90,7 @@ msgstr ""
 
 #. module: thesis_management
 #: model:ir.actions.report,name:thesis_management.action_evaluation_certificate_report
-msgid "Acta de Tesis"
+msgid "Acta de Trabajo de Grado"
 msgstr ""
 
 #. module: thesis_management
@@ -151,17 +151,17 @@ msgstr "Carreras"
 #: model:ir.ui.menu,name:thesis_management.evaluation_certificate_main_menu
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
 msgid "Certificate"
-msgstr "Certificado"
+msgstr "Trabajo de Grado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__approved_status
 msgid "Certificate Status"
-msgstr "Estado de certificado"
+msgstr "Estado de trabajo"
 
 #. module: thesis_management
 #: model:ir.ui.menu,name:thesis_management.evaluation_certificate_menu
 msgid "Certificates"
-msgstr "Certificados"
+msgstr "Trabajos de Grado"
 
 #. module: thesis_management
 #: model:ir.model.fields.selection,name:thesis_management.selection__evaluation_certificate__place__chilemex
@@ -216,7 +216,7 @@ msgstr "Creado en"
 #: model_terms:ir.actions.act_window,help:thesis_management.action_professor
 #: model_terms:ir.actions.act_window,help:thesis_management.action_student
 msgid "Define a new Certificate"
-msgstr "Definir un nuevo certificado"
+msgstr "Definir un nuevo Trabajo de Grado"
 
 #. module: thesis_management
 #: model_terms:ir.actions.act_window,help:thesis_management.action_career
@@ -248,7 +248,7 @@ msgstr ""
 #: model:ir.actions.act_window,name:thesis_management.action_evaluation_certificate
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_search
 msgid "Evaluation Certificate"
-msgstr "Certificado de evaluación"
+msgstr "Trabajos de Grado"
 
 #. module: thesis_management
 #: model:ir.model,name:thesis_management.model_evaluation_certificate
@@ -259,7 +259,7 @@ msgstr "Modelo de certificado de evaluación para la tesis de gestión"
 #: model:ir.model.fields,field_description:thesis_management.field_career__certificate_ids
 #: model:ir.model.fields,field_description:thesis_management.field_professor__certificate_ids
 msgid "Evaluation Certificates"
-msgstr "Certificados de evaluación"
+msgstr "Trabajos de Grado"
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.professor_line_view_search
@@ -367,7 +367,7 @@ msgstr ""
 #. module: thesis_management
 #: model:ir.module.category,description:thesis_management.module_category_thesis_management
 msgid "Manage users of Thesis"
-msgstr "Administrar usuarios de la tesis"
+msgstr "Administrar usuarios de los Trabajos de Grado"
 
 #. module: thesis_management
 #: model:ir.ui.menu,name:thesis_management.jury_menu
@@ -534,7 +534,7 @@ msgstr "Nombre técnico"
 #: model:ir.module.category,name:thesis_management.module_category_thesis_management
 #: model:ir.ui.menu,name:thesis_management.evaluation_certificate_menu_root
 msgid "Thesis Management"
-msgstr "Gestión de tesis"
+msgstr "Gestión de Trabajos de Grado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_professor__times_in_jury
@@ -544,13 +544,13 @@ msgstr "Veces en el jurado"
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__name
 msgid "Tittle of Work"
-msgstr "Titulo de la tesis"
+msgstr "Titulo del Trabajo de Grado"
 
 #. module: thesis_management
 #: model:ir.model.fields,field_description:thesis_management.field_evaluation_certificate__tutor_id
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_view_search
 msgid "Tutor"
-msgstr "Tutor"
+msgstr ""
 
 #. module: thesis_management
 #: model_terms:ir.ui.view,arch_db:thesis_management.evaluation_certificate_template
